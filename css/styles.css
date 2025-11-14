@@ -564,24 +564,29 @@ font-weight: 500;
 
 .form-subscribe {
     display: flex;
+    gap: 24px;
+
+}
+
+.label-subscribe{
+
 }
 
 .form-subscribe input::placeholder {
     color: #fff;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
 }
 
 .form-input {
-    margin-right: 24px;
-    padding: 8px 16px;
+    padding-left: 16px;
     border: 1px solid #fff;
     border-radius: 4px;
     width: 264px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: #2E2F42;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
 }
 
 .button-subscribe {
