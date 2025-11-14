@@ -573,7 +573,7 @@ font-weight: 500;
 }
 
 .form-subscribe input::placeholder {
-    color: #fff;
+    color: #ffffff;
 }
 
 .form-input {
@@ -587,16 +587,16 @@ font-weight: 500;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+    color: #ffffff;
 }
 
 .button-subscribe {
     height: 40px;
-    width: 165px;
+    min-width: 165px;
     background-color: #4D5AE5;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     border-radius: 4px;
     padding-block: 8px;
     padding-inline: 24px;
@@ -606,10 +606,12 @@ font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+    cursor: pointer;
 }
 
 .footer-form-svg {
     fill: #fff;
+    margin-left: 16px;
 }
 
 /* #endregion footer */
