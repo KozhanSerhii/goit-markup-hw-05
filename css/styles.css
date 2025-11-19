@@ -667,7 +667,8 @@ font-weight: 500;
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
     padding: 72px 24px 24px 24px;
     overflow: auto;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button{
@@ -679,16 +680,19 @@ font-weight: 500;
     align-items: center;
     width: 24px;
     height: 24px;
+    padding: 0;
+    cursor: pointer;
     border-radius: 50%;
     background-color: #E7E9FC;
     border-width: 1px;
-    border:  rgba(0, 0, 0, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
     
 }
 
-.circle-icon-close:hover,
-.circle-icon-close:focus{
+.close-button:hover,
+.close-button:focus{
     background-color: #404BBF;
 }
 
@@ -697,8 +701,8 @@ font-weight: 500;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.circle-icon-close:hover .popup-icon-close,
-.circle-icon-close:focus .popup-icon-close{
+.close-button:hover .popup-icon-close,
+.close-button:focus .popup-icon-close{
     fill: #FFFFFF;
 }
 
@@ -737,8 +741,10 @@ font-weight: 500;
 .text-field{
     width: 100%;
     height: 40px;
-    border: 1px solid #2E2F42;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+    background-color: transparent;
+    outline: transparent;
     padding-left: 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -767,12 +773,14 @@ font-weight: 500;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
+    color: rgba(46, 47, 66, 0.4);
     letter-spacing: 0.04em;
-    color: #2E2F42;
-    padding-top: 8px;
-    padding-left: 16px;
-    border: 1px solid #2E2F42;
+    padding: 8px 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    outline: transparent;
     border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment-text-field:focus{
